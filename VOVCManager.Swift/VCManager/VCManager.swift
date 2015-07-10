@@ -245,7 +245,7 @@ class VCManager: NSObject{
     :param: aStoryboard       故事版名称
     :param: params            页面参数
     :param: animated          是否有动画效果
-    :param: removeControllers 要移除的页面
+    :param: removeControllers 要移除的页面名称数组
     */
     func pushViewController(aController:String, storyboard aStoryboard:String?, params:Dictionary<String,AnyObject>?, animated:Bool, removeControllers:[String]?){
         self.pushViewController(aController, storyboard: aStoryboard, params: params, animated:animated)
@@ -254,15 +254,15 @@ class VCManager: NSObject{
         }
         for removeController in removeControllers!{
             if(removeController != aController){
-                var removeIndex:Int = -1
+                var removeIndexes = [Int]()
                 for i in 0..<self.curNaviController!.viewControllers.count{
                     let viewController:AnyObject = self.curNaviController!.viewControllers[i]
                     if(viewController.type == removeController){
-                        removeIndex = i
+                        removeIndexes.append(i)
                     }
                 }
-                if(removeIndex >= 0){
-                    self.curNaviController!.viewControllers .removeAtIndex(removeIndex)
+                for index in removeIndexes{
+                    self.curNaviController?.viewControllers.removeAtIndex(index)
                 }
             }
         }
