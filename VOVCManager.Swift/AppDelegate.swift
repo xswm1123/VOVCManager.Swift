@@ -16,6 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        VCManager.sharedManager()
+        self.registerViewControllers()
         return true
     }
 
@@ -40,7 +42,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        return VCManager.sharedManager().handleURL(url)
+    }
+    
+    private func registerViewControllers(){
+        VCManager.sharedManager().registerWithSpec([VCName:"favorite",VCController:"VOFavoriteMainController",VCStoryBoard:"Main",VCISPresent:false])
+    VCManager.sharedManager().registerWithSpec([VCName:"favoriteDetail",VCController:"VOFavoriteMainController",VCStoryBoard:"Main",VCISPresent:false])
+    VCManager.sharedManager().registerWithSpec([VCName:"recents",VCController:"VORecentsMainController",VCStoryBoard:"Main",VCISPresent:false])
+    VCManager.sharedManager().registerWithSpec([VCName:"recentsDetail",VCController:"VORecentsDetailController",VCStoryBoard:"Main",VCISPresent:false])
+    VCManager.sharedManager().registerWithSpec([VCName:"bookmark",VCController:"VOBookmarkMainController",VCStoryBoard:"Main",VCISPresent:false])
+    VCManager.sharedManager().registerWithSpec([VCName:"bookmarkDetail",VCController:"VOBookmarkDetailController",VCStoryBoard:"Main",VCISPresent:false])
+    VCManager.sharedManager().registerWithSpec([VCName:"user",VCController:"VOUserMainController",VCStoryBoard:"Main",VCISPresent:false])
+    VCManager.sharedManager().registerWithSpec([VCName:"userDetail",VCController:"VOUserDetailController",VCStoryBoard:"Main",VCISPresent:false])
+        
+    }
+    
 
 }
 

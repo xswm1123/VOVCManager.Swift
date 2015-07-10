@@ -8,11 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3EE71BBF1B4F7DEE00DC8B18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BBE1B4F7DEE00DC8B18 /* AppDelegate.swift */; };
-		3EE71BC11B4F7DEE00DC8B18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BC01B4F7DEE00DC8B18 /* ViewController.swift */; };
 		3EE71BC41B4F7DEE00DC8B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EE71BC21B4F7DEE00DC8B18 /* Main.storyboard */; };
 		3EE71BC61B4F7DEE00DC8B18 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE71BC51B4F7DEE00DC8B18 /* Images.xcassets */; };
 		3EE71BC91B4F7DEE00DC8B18 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3EE71BC71B4F7DEE00DC8B18 /* LaunchScreen.xib */; };
 		3EE71BD51B4F7DEE00DC8B18 /* VOVCManager_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BD41B4F7DEE00DC8B18 /* VOVCManager_SwiftTests.swift */; };
+		3EE71BE21B4F7ED200DC8B18 /* NSObject+Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BDF1B4F7ED200DC8B18 /* NSObject+Runtime.swift */; };
+		3EE71BE31B4F7ED200DC8B18 /* UIViewController+Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BE01B4F7ED200DC8B18 /* UIViewController+Record.swift */; };
+		3EE71BE41B4F7ED200DC8B18 /* VCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BE11B4F7ED200DC8B18 /* VCManager.swift */; };
+		3EE71BEE1B4F7EDD00DC8B18 /* VOBookmarkDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BE61B4F7EDD00DC8B18 /* VOBookmarkDetailController.swift */; };
+		3EE71BEF1B4F7EDD00DC8B18 /* VOBookmarkMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BE71B4F7EDD00DC8B18 /* VOBookmarkMainController.swift */; };
+		3EE71BF01B4F7EDD00DC8B18 /* VOFavoriteDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BE81B4F7EDD00DC8B18 /* VOFavoriteDetailController.swift */; };
+		3EE71BF11B4F7EDD00DC8B18 /* VOFavoriteMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BE91B4F7EDD00DC8B18 /* VOFavoriteMainController.swift */; };
+		3EE71BF21B4F7EDD00DC8B18 /* VORecentsDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BEA1B4F7EDD00DC8B18 /* VORecentsDetailController.swift */; };
+		3EE71BF31B4F7EDD00DC8B18 /* VORecentsMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BEB1B4F7EDD00DC8B18 /* VORecentsMainController.swift */; };
+		3EE71BF41B4F7EDD00DC8B18 /* VOUserDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BEC1B4F7EDD00DC8B18 /* VOUserDetailController.swift */; };
+		3EE71BF51B4F7EDD00DC8B18 /* VOUserMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE71BED1B4F7EDD00DC8B18 /* VOUserMainController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +39,23 @@
 		3EE71BB91B4F7DEE00DC8B18 /* VOVCManager.Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VOVCManager.Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE71BBD1B4F7DEE00DC8B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE71BBE1B4F7DEE00DC8B18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EE71BC01B4F7DEE00DC8B18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3EE71BC31B4F7DEE00DC8B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3EE71BC51B4F7DEE00DC8B18 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3EE71BC81B4F7DEE00DC8B18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3EE71BCE1B4F7DEE00DC8B18 /* VOVCManager.SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VOVCManager.SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EE71BD31B4F7DEE00DC8B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EE71BD41B4F7DEE00DC8B18 /* VOVCManager_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOVCManager_SwiftTests.swift; sourceTree = "<group>"; };
+		3EE71BDF1B4F7ED200DC8B18 /* NSObject+Runtime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Runtime.swift"; sourceTree = "<group>"; };
+		3EE71BE01B4F7ED200DC8B18 /* UIViewController+Record.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Record.swift"; sourceTree = "<group>"; };
+		3EE71BE11B4F7ED200DC8B18 /* VCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCManager.swift; sourceTree = "<group>"; };
+		3EE71BE61B4F7EDD00DC8B18 /* VOBookmarkDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VOBookmarkDetailController.swift; sourceTree = "<group>"; };
+		3EE71BE71B4F7EDD00DC8B18 /* VOBookmarkMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VOBookmarkMainController.swift; sourceTree = "<group>"; };
+		3EE71BE81B4F7EDD00DC8B18 /* VOFavoriteDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VOFavoriteDetailController.swift; sourceTree = "<group>"; };
+		3EE71BE91B4F7EDD00DC8B18 /* VOFavoriteMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VOFavoriteMainController.swift; sourceTree = "<group>"; };
+		3EE71BEA1B4F7EDD00DC8B18 /* VORecentsDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VORecentsDetailController.swift; sourceTree = "<group>"; };
+		3EE71BEB1B4F7EDD00DC8B18 /* VORecentsMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VORecentsMainController.swift; sourceTree = "<group>"; };
+		3EE71BEC1B4F7EDD00DC8B18 /* VOUserDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VOUserDetailController.swift; sourceTree = "<group>"; };
+		3EE71BED1B4F7EDD00DC8B18 /* VOUserMainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VOUserMainController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +97,9 @@
 		3EE71BBB1B4F7DEE00DC8B18 /* VOVCManager.Swift */ = {
 			isa = PBXGroup;
 			children = (
+				3EE71BDE1B4F7ED200DC8B18 /* VCManager */,
+				3EE71BE51B4F7EDD00DC8B18 /* Controller */,
 				3EE71BBE1B4F7DEE00DC8B18 /* AppDelegate.swift */,
-				3EE71BC01B4F7DEE00DC8B18 /* ViewController.swift */,
 				3EE71BC21B4F7DEE00DC8B18 /* Main.storyboard */,
 				3EE71BC51B4F7DEE00DC8B18 /* Images.xcassets */,
 				3EE71BC71B4F7DEE00DC8B18 /* LaunchScreen.xib */,
@@ -110,6 +131,31 @@
 				3EE71BD31B4F7DEE00DC8B18 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EE71BDE1B4F7ED200DC8B18 /* VCManager */ = {
+			isa = PBXGroup;
+			children = (
+				3EE71BDF1B4F7ED200DC8B18 /* NSObject+Runtime.swift */,
+				3EE71BE01B4F7ED200DC8B18 /* UIViewController+Record.swift */,
+				3EE71BE11B4F7ED200DC8B18 /* VCManager.swift */,
+			);
+			path = VCManager;
+			sourceTree = "<group>";
+		};
+		3EE71BE51B4F7EDD00DC8B18 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EE71BE71B4F7EDD00DC8B18 /* VOBookmarkMainController.swift */,
+				3EE71BE61B4F7EDD00DC8B18 /* VOBookmarkDetailController.swift */,
+				3EE71BE91B4F7EDD00DC8B18 /* VOFavoriteMainController.swift */,
+				3EE71BE81B4F7EDD00DC8B18 /* VOFavoriteDetailController.swift */,
+				3EE71BEB1B4F7EDD00DC8B18 /* VORecentsMainController.swift */,
+				3EE71BEA1B4F7EDD00DC8B18 /* VORecentsDetailController.swift */,
+				3EE71BED1B4F7EDD00DC8B18 /* VOUserMainController.swift */,
+				3EE71BEC1B4F7EDD00DC8B18 /* VOUserDetailController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,8 +258,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE71BC11B4F7DEE00DC8B18 /* ViewController.swift in Sources */,
+				3EE71BE31B4F7ED200DC8B18 /* UIViewController+Record.swift in Sources */,
+				3EE71BEF1B4F7EDD00DC8B18 /* VOBookmarkMainController.swift in Sources */,
+				3EE71BF01B4F7EDD00DC8B18 /* VOFavoriteDetailController.swift in Sources */,
+				3EE71BE21B4F7ED200DC8B18 /* NSObject+Runtime.swift in Sources */,
+				3EE71BE41B4F7ED200DC8B18 /* VCManager.swift in Sources */,
+				3EE71BEE1B4F7EDD00DC8B18 /* VOBookmarkDetailController.swift in Sources */,
+				3EE71BF31B4F7EDD00DC8B18 /* VORecentsMainController.swift in Sources */,
+				3EE71BF21B4F7EDD00DC8B18 /* VORecentsDetailController.swift in Sources */,
+				3EE71BF41B4F7EDD00DC8B18 /* VOUserDetailController.swift in Sources */,
 				3EE71BBF1B4F7DEE00DC8B18 /* AppDelegate.swift in Sources */,
+				3EE71BF51B4F7EDD00DC8B18 /* VOUserMainController.swift in Sources */,
+				3EE71BF11B4F7EDD00DC8B18 /* VOFavoriteMainController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +467,7 @@
 				3EE71BDA1B4F7DEE00DC8B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3EE71BDB1B4F7DEE00DC8B18 /* Build configuration list for PBXNativeTarget "VOVCManager.SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +476,7 @@
 				3EE71BDD1B4F7DEE00DC8B18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
